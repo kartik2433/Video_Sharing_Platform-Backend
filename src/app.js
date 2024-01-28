@@ -15,6 +15,10 @@ app.use(express.urlencoded({
 app.use(express.static("public"))
 app.use(cookieParser())
 
-const sweets_ants = "https://www.codingninjas.com/studio/problem-of-the-day/easy"
+import userRouter from "./routes/user.route.js"
+
+app.use("/users", userRouter);
+
+// const sweets_ants = "https://www.codingninjas.com/studio/problem-of-the-day/easy"
 
 export {app}
