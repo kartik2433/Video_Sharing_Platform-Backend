@@ -17,7 +17,7 @@ app.use(cookieParser())
 
 import userRouter from "./routes/user.route.js"
 
-app.use("/users", userRouter);
+app.use("/user", userRouter);
 
 // const sweets_ants = "https://www.codingninjas.com/studio/problem-of-the-day/easy"
 
